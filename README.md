@@ -73,7 +73,7 @@ You are free to use, modify, and distribute this software under the terms of the
 
 ## 🏢 Maintainer
 
-**Maintained by** 3dlux
+**Maintained by** [3dlux](https://3dlux.art/)
 
 Development led by the 3dlux.art tools team.
 
