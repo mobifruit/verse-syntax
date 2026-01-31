@@ -19,21 +19,29 @@ You can help by:
 
 2. **Clone your fork** locally:
 
-`git clone https://github.com/YOUR_USERNAME/verse-syntax.git
+```bash
+git clone https://github.com/YOUR_USERNAME/verse-syntax.git
+```
 
 3. **Create a feature branch**:
 
-`git checkout -b feature/my-feature
+```bash
+git checkout -b feature/my-feature
+```
 
 4. Make your changes **following the coding style guidelines**
 
 5. **Commit your changes** with a descriptive message:
 
-`git commit -m "Add [feature/fix] description"
+```bash
+git commit -m "Add [feature/fix] description"
+```
 
 6. **Push your branch** to your fork:
 
-`git push origin feature/my-feature
+```bash
+git push origin feature/my-feature
+```
 
 7. Open a **Pull Request** against the main repository
 
