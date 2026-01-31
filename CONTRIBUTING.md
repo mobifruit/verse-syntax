@@ -59,24 +59,18 @@ Please use the **GitHub Issues tracker** to report:
 
 Include **steps to reproduce** and any relevant examples to help maintainers understand the problem.
 
----
-
 ## Code of Conduct
 
 By contributing, you agree to follow our Code of Conduct.
 We aim to maintain a **friendly, inclusive, and constructive environment** for all contributors.
-
----
 
 ## Attribution
 
 All contributions are under the same Apache 2.0 license as the project.
 Credit is given to all contributors via GitHub history.
 
-## Optional Section for Advanced Contributors
+## Optional Suggestions for Advanced Contributors
 
-Adding new platforms (WordPress plugin, web integration)
-
-Improving grammar parsing or tokenization
-
-Adding tests for grammar correctness
+- Adding new platforms (WordPress plugin, web integration)
+- Improving grammar parsing or tokenization
+- Adding tests for grammar correctness
