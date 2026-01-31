@@ -55,13 +55,10 @@ The bot responds with a **color-coded version** using ANSI formatting.
 
 Contributions are welcome! You can help by:
 
-Improving the Verse grammar
-
-Adding new tokens or syntax support
-
-Expanding platform integrations
-
-Improving documentation
+- Improving the Verse grammar
+- Adding new tokens or syntax support
+- Expanding platform integrations
+- Improving documentation
 
 Please see CONTRIBUTING.md for guidelines.
 
