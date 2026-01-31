@@ -32,9 +32,12 @@ This project is designed to be **community-friendly, extensible, and platform-ag
 - Designed for future integrations (WordPress, web, editors, etc.)
 
 # 📦 Project Structure
+
+```bash
 /prism-verse        → Verse language grammar
 /discord-bot        → ANSI highlighter bot
 /docs               → Usage and integration guides
+```
 
 # 🛠 Usage (Discord)
 
