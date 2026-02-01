@@ -34,9 +34,9 @@ This project is designed to be **community-friendly, extensible, and platform-ag
 # 📦 Project Structure
 
 ```bash
-/prism-verse        → Verse language grammar
-/discord-bot        → ANSI highlighter bot
-/docs               → Usage and integration guides
+/prism-verse.js     → Verse language grammar
+/bot.js             → ANSI highlighter bot
+/docs               → Usage and integration guides (TODO)
 ```
 
 # 🛠 Usage (Discord)
