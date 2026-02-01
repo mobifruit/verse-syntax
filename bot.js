@@ -1,16 +1,3 @@
-const { Client, GatewayIntentBits } = require('discord.js');
-const Prism = require('prismjs');
-
-// Load base languages Prism needs
-require('prismjs/components/prism-clike');
-require('prismjs/components/prism-javascript');
-
-// Load your custom Verse grammar
-require('./prism-verse');
-
-require('dotenv').config();
-
-// === ANSI color map ===
 /*
  * Verse Prism Grammar & Discord Highlighter Bot
  * Copyright (c) 2026 3dlux
@@ -18,29 +5,48 @@ require('dotenv').config();
  * Licensed under the Apache License, Version 2.0
  */
 
+const { Client, GatewayIntentBits } = require('discord.js');
+const Prism = require('prismjs');
+
+// Load base languages Prism needs
+require('prismjs/components/prism-clike');
+require('prismjs/components/prism-javascript');
+
+// Load your custom Verse grammar and .env lib configuration with token
+require('./prism-verse');
+require('dotenv').config();
+
+// === ANSI color map ===
 const ANSI = {
   reset: "\u001b[0m",
-  gray: "\u001b[90m",
   red: "\u001b[31m",
   green: "\u001b[32m",
   yellow: "\u001b[33m",
   blue: "\u001b[34m",
   magenta: "\u001b[35m",
   cyan: "\u001b[36m",
-  white: "\u001b[37m"
+  white: "\u001b[37m",
+  gray: "\u001b[90m",
+  lightred: "\u001b[91m",
+  lime: "\u001b[92m",
+  gold: "\u001b[93m",
+  lightblue: "\u001b[94m",
+  pink: "\u001b[95m",
+  aqua: "\u001b[96m",
+  white: "\u001b[97m"
 };
 
 // Map Prism token types to colors
 const colorMap = {
-  'comment': ANSI.gray,
-  'string': ANSI.green,
-  'keyword': ANSI.cyan,
-  'boolean': ANSI.magenta,
-  'number': ANSI.magenta,
-  'class-name': ANSI.yellow,
-  'function': ANSI.blue,
-  'operator': ANSI.red,
-  'punctuation': ANSI.white
+  'comment': ANSI.green,//gray (lime renders as white, alternative: cyan instead of green)
+  'string': ANSI.red,//green
+  'keyword': ANSI.blue,//cyan
+  'boolean': ANSI.blue,//magenta
+  'number': ANSI.yellow,//magenta
+  'class-name': ANSI.pink,//yellow
+  'function': ANSI.magenta,//blue (magenta not quite pink; alternative cyan is better to read)
+  'operator': ANSI.gray,//red
+  'punctuation': ANSI.gray//white
 };
 
 // Convert Prism tokens → ANSI text
