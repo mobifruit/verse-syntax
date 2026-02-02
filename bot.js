@@ -16,9 +16,9 @@ require('prismjs/components/prism-javascript');
 require('./prism-verse');
 require('dotenv').config();
 
-// === ANSI color map ===
+// Classic ANSI color map (Level 1)
 const ANSI = {
-  reset: "\u001b[0m",
+  reset: "\u001b[0m",//black
   red: "\u001b[31m",
   green: "\u001b[32m",
   yellow: "\u001b[33m",
@@ -36,14 +36,25 @@ const ANSI = {
   white: "\u001b[97m"
 };
 
+//\u001b[38;5;108m // ANSI Level 2
+//\u001b[38;2;119;176;107mHello\u001b[0m // ANSI Level 3
+  
 // Map Prism token types to colors
 const colorMap = {
   'comment': ANSI.green,//gray (lime renders as white, alternative: cyan instead of green)
   'string': ANSI.red,//green
+  'visibility-specifier': ANSI.cyan,//blue
+  'class-specifier': ANSI.cyan,//blue
+  'effect-specifier': ANSI.cyan,//blue
+  'enum-specifier': ANSI.cyan,//blue
+  'function-specifier': ANSI.cyan,//blue
   'keyword': ANSI.blue,//cyan
   'boolean': ANSI.blue,//magenta
   'number': ANSI.yellow,//magenta
   'class-name': ANSI.pink,//yellow
+  'common-types': ANSI.blue,//cyan
+  'container-types': ANSI.blue,//cyan
+  'composite-types': ANSI.blue,//cyan
   'function': ANSI.magenta,//blue (magenta not quite pink; alternative cyan is better to read)
   'operator': ANSI.gray,//red
   'punctuation': ANSI.gray//white
